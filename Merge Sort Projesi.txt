@@ -1,0 +1,24 @@
+Verilen dizi merge sort (birleştirme sıralaması) yöntemi kullanılarak sıralanabilir. Merge sort, diziyi ikiye böler, her iki yarıyı ayrı ayrı sıralar ve son olarak bu sıralanmış yarıları birleştirerek tamamlar.
+
+Verilen dizi, merge sort algoritması kullanılarak aşağıdaki adımlarla sıralanır:
+
+İlk adımda, dizi ikiye bölünür:
+
+[16,21,11] [8,12,22]
+
+Her bir yarı dizi ayrı ayrı merge sort algoritması ile sıralanır:
+
+[11,16,21] [8,12,22]
+
+Sıralanmış iki yarı dizi, birleştirme (merge) adımında birleştirilir:
+
+[8, 11, 12, 16, 21, 22]
+
+Artık dizi sıralanmıştır ve işlem tamamlanmıştır.
+
+Verilen dizinin merge sort algoritması ile sıralanması sonucu elde edilen karmaşıklık analizi aşağıdaki gibidir:
+
+Her seferinde dizi ikiye bölündüğü için log2(n) seviyesinde bölünmeler gerçekleşir.
+Her seviyedeki birleştirme işlemi n elemanlı bir diziye yönelik O(n) zaman karmaşıklığına sahiptir.
+Toplamda log2(n) seviyede bölünmeler gerçekleştiğinden, her seviyedeki birleştirme işlemleri toplamda O(n log n) zaman karmaşıklığına sahiptir.
+Sonuç olarak, merge sort algoritması, O(n log n) zaman karmaşıklığına sahiptir.
